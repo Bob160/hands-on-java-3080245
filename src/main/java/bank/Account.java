@@ -27,7 +27,7 @@ public class Account {
     this.type = type;
   }
 
-  public Long getBalance() {
+  public double getBalance() {
     return this.balance;
   }
 

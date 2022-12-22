@@ -31,8 +31,8 @@ public class Account {
     return this.balance;
   }
 
-  public void setBalance(Long balance) {
-    this.balance = balance;
+  public void setBalance(double balance2) {
+    this.balance = balance2;
   }
 
 }

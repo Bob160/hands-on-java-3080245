@@ -3,9 +3,9 @@ package bank;
 public class Account {
   private int id;
   private String type;
-  private Long balance;
+  private double balance;
 
-  public Account(int id, String type, Long balance) {
+  public Account(int id, String type, double balance) {
     setId(id);
     setType(type);
     setBalance(balance);

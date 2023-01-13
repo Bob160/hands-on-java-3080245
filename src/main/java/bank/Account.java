@@ -44,10 +44,11 @@ public class Account {
     else {
       double newBalance = balance + amount;
       setBalance(newBalance);
+      DataSource.updateAccountBalance(id, newBalance);
     }
   }
 
-  public void withdraw(double amount) {
+  public void withdraw(double amount) throws AmountException {
     if(amount < 1) {
       throw new AmountException("The minimum withdrawal is 1.00");
     } else {
